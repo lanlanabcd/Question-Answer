@@ -7,12 +7,16 @@ class QAElement:
         """
         question: list, question_len: int, answer_list: 2d list, answer_len: int list
         """
-        self.question = []
-        self.question_len = 0
-        self.answer_list = [[]]
-        self.answer_len_list = []
-        self.answer_tag_list = []
+        self.question = []              # a list of int, and every number represents a word
+        self.question_len = 0           # length of self.question
+        self.answer_list = [[]]         # of the same format with question
+        self.answer_len_list = []       # length of each question
+        self.answer_tag_list = []       # tag of each question
 
+# TODO(WZL): for LXZ: initial the QAElement for each question-answers pair.
+
+
+# temporary test data ONLY FOR TESTING MODEL
 
 # qa_batch = [QAElement()]
 #
